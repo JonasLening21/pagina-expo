@@ -222,7 +222,7 @@ header .textos h2 {
     /* BOTON ARRIBA*/
     .go-top-container{
         position: fixed;
-        bottom: 4.0rem;
+        bottom: 7.0rem;
         right: 0rem;
         width: 3.7rem;
         height: 0rem;
