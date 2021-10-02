@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+   
+}
+     .body{
+        width: auto;
+        aspect-ratio: 1 / 1;
+        background: linear-gradient(to bottom, #B9CEE6, #E6ECF0);
+     }
+     .contenedor {
+        width: 90%;
+        max-width: 1000px;
+        overflow: hidden;
+        margin: auto;
+        padding: 0 0 80px 0;
+    }
+    
+    .titulo {
+        color: #075aaa;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+  
+    
+    /*NAV*/
+
+header {
+    background-image: url("../imagenes/invetario.png");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between
+}
+
+.icono {
+    display: none;
+}
+
+.enlaces {
+  
+    display: flex;
+    height: 100%;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces a {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlaces a:hover,
+.active {
+    border-top: 2px solid rgb(12, 114, 145);
+    border-bottom: 2px solid rgb(21, 142, 199);
+}
+
+nav .logo {
+    height: 100%;
+    background: #fff;
+    margin-left: 80px;
+}
+
+nav .logo img {
+    object-fit: cover;
+    height: inherit;
+}
+
+header .textos {
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+}
+
+header .textos h1 {
+    font-size: 95px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header .textos h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:750px) {
+    .icono {
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        color: #fff;
+        background: transparent;
+        padding: 20px;
+        z-index: 100;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    header .textos h1 {
+        font-size: 75px;
+    }
+
+    .enlaces {
+       position: absolute;
+        height: 100vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+        background: #ad2c08;
+        background: -webkit-linear-gradient(to right, #e20707, #ce360c);
+        background: linear-gradient(to right, #c5120c, #d1360c);
+
+    }
+
+    .uno {
+
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+
+    }
+
+    .dos {
+
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+
+    }
+}
+
+@media screen and (max-width:400px){
+    nav .logo{
+        margin-left: 20px;
+    }
+    .icono{
+        margin-right:20px;
+    }
+
+    header .textos h1 {
+        font-size: 65px;
+    }
+}
+
+    
+    /*Información General del sistema*/
+   
+    .contenedor-sobre-nosotros{
+        display: flex;
+        
+    }
+    
+    .imagen-about-us{
+        width: 48%;
+    }
+    
+    .sobre-nosotros .contenido-textos{
+        width: 48%;
+    }
+    
+    .contenido-textos h3{
+        margin-bottom: 15px;
+    }
+    
+    .contenido-textos h3 span{
+        background: #5c1803;
+        color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        padding: 2px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+        margin-right: 5px;
+    }
+    
+    .contenido-textos p{
+        padding: 0px 0px 30px 15px;
+        font-weight: 300;
+        text-align: justify;
+    }
+    @media screen and (max-width:900px){
+        header{
+            background-position: center;
+        }
+    
+        .contenedor-sobre-nosotros{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .sobre-nosotros .contenido-textos{
+            width: 90%;
+        }
+    
+        .imagen-about-us{
+            width: 90%;
+        }
+    }
+
+    /* BOTON ARRIBA*/
+    .go-top-container{
+        position: fixed;
+        bottom: 4.0rem;
+        right: 0rem;
+        width: 3.7rem;
+        height: 0rem;
+        z-index: -1;
+    }
+    .go-top-button{
+        width: 0rem;
+        height: 0rem;
+        background: #2071b2;
+        border-radius: 55%;
+        cursor: pointer;
+        transition: .2s;
+        top: 0%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+    }
+    .go-top-button i{
+        position: absolute;
+        font-size: 1.8rem;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        color: #fff;
+        transition: .2s;
+    }
+    .show{
+        z-index: 10;
+    }
+    .show .go-top-button{
+        animation: popup .3s ease-in-out;
+        width: 5.0rem;
+        height: 5.0rem;
+        z-index: 11;
+    }
+    .show i{
+        transform: translate(-50%, -50%);
+    }
+    @keyframes popup{
+        0%{
+            width: 0rem;
+            height: 0rem;
+        }
+        50%{
+            width: 8rem;
+            height: 8rem;
+        }
+        100%{
+            width: 6.6rem;
+            height: 6.6rem;
+        }
+    }
+
+    @media screen and (max-width: 576px){
+        header{
+            justify-content: flex-start;
+        }
+
+        header .textos-header{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .imagen-about-us{
+            width: 85%;
+            height: 400px;
+        }
+    }
+
+  
+
