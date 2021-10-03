@@ -53,7 +53,7 @@ header nav {
   
     display: flex;
     height: 100%;
-    width: 75%;
+    width: 70%;
     justify-content: space-around;
     align-items: center;
 }
@@ -91,8 +91,8 @@ header .textos {
 }
 
 header .textos h1 {
-    font-size: 95px;
-    letter-spacing: 3px;
+    font-size: 100px;
+    letter-spacing: 4px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -128,8 +128,8 @@ header .textos h2 {
         flex-direction: column;
         transition: all 1s ease;
         background: #ad2c08;
-        background: -webkit-linear-gradient(to right, #e20707, #ce360c);
-        background: linear-gradient(to right, #c5120c, #d1360c);
+        background: -webkit-linear-gradient(to right, #e2070783, #272727);
+        background: linear-gradient(to right, #3d3b3b, #cf0e0e);
 
     }
 
