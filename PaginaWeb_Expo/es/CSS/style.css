@@ -306,7 +306,7 @@ header .textos h2 {
     }
     
     .left{
-       
+        background: url("../imagenes/undraw_contact_us_15o2.svg") no-repeat center;
         background-size: cover;
         height: 100%;
     }
