@@ -315,11 +315,6 @@ header .textos h2 {
         padding: 25px 40px;
     }
     
-    h2{
-        position: relative;
-        padding: 0 0 10px;
-        margin-bottom: 10px;
-    }
     
     h2:after{
         content: '';
@@ -384,4 +379,3 @@ header .textos h2 {
     
 
   
-
