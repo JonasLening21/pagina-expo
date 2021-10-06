@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+   
+}
+     
+    .contenedor {
+        padding: 60px 0;
+        width: 90%;
+        max-width: 999px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .titulo {
+        color: #075aaa;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    /*HEADER*/
+    
+    header {
+        width: 100%;
+        height: 600px;
+        background: #79797e;
+        background: -webkit-linear-gradient(to right,  #893121af(182, 95%, 50%, 0.459), (184, 45%, 52%, 0.664)), url(../imagenes/invetario.png);
+        background: linear-gradient(to right, hsla(22, 92%, 36%, 0.699), hsla(207, 96%, 42%, 0.884)), url(../imagenes/invetario.png
+        );
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+    
+    nav{
+        text-align: center;
+        padding: 30px 50px 0 0;
+    }
+    
+    nav > a{
+        color:#fff;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    nav > a:hover{
+        text-decoration: underline;
+    }
+    
+    header .textos-header{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .textos-header h1{
+        font-size: 50px;
+        color:#fff;
+    }
+    
+    .textos-header h2{
+        font-size: 30px;
+        font-weight: 300;
+        color:#fff;
+    }
+    
+    
+    /*Información General del sistema*/
+    main .sobre-nosotros{
+        padding: 30px 0 60px 0;
+    }
+    
+    .contenedor-sobre-nosotros{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .imagen-about-us{
+        width: 55%;
+        height: 400px;
+    
+    }
+    
+    .sobre-nosotros .contenido-textos{
+        width: 500%;
+    }
+    
+    .contenido-textos h3{
+        margin-bottom: 18px;
+    }
+    
+    .contenido-textos h3 span{
+        background: #075aaa;
+        color: #fff;
+        border-radius: 60%;
+        display: inline-block;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        padding: 2px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+        margin-right: 5px;
+    }
+    
+    .contenido-textos p{
+        padding: 0px 0px 30px 15px;
+        font-weight: 300;
+        text-align: justify;
+      }
+    
+      .info{
+          justify-content: center;
+          text-align: center;
+      }
+      
+      .ilustraciones-text{
+          text-align: center;
+      }
+
+
+      /*BOTON IDIOMA*/
+
+.en{
+    color:#333
+}
+.es{
+    color:#00a1ff;
+}
+.check{
+    position: relative;
+    width: 50px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: rgb(247, 247, 247);
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid rgb(241, 241, 241);
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border:2px solid #00a1ff
+}
+.check:checked::before{
+    background: #00a1ff;
+}
+
+/* BOTON ARRIBA*/
+.go-top-container{
+    position: fixed;
+    bottom: 4.0rem;
+    right: 0rem;
+    width: 2.9rem;
+    height: 0rem;
+    z-index: -1;
+}
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #2071b2;
+    border-radius: 55%;
+    cursor: pointer;
+    transition: .2s;
+    top: 0%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+}
+.go-top-button i{
+    position: absolute;
+    font-size: 1.8rem;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+.show{
+    z-index: 10;
+}
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 5.0rem;
+    height: 5.0rem;
+    z-index: 11;
+}
+.show i{
+    transform: translate(-50%, -50%);
+}
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }  
+
+}
+  /*BOTON IDIOMA*/
+
+  .en{
+    color:#333
+}
+.es{
+    color:#00a1ff;
+}
+.check{
+    position: relative;
+    width: 50px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border:2px solid #00a1ff
+}
+.check:checked::before{
+    background: #00a1ff;
+}
+
+
+
+
+
